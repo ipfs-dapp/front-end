@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPFS - Dapp</title>
+  <link rel="shortcut icon" href="https://raw.githubusercontent.com/blockchain/My-Wallet-V3-Frontend/master/img/favicon/favicon.ico" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+  <style media="screen">
+    .ui.placeholder.segment .button,
+    .ui.placeholder.segment .field,
+    .ui.placeholder.segment textarea,
+    .ui.placeholder.segment>.ui.input {
+      max-width: unset;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="ui inverted segment">
+    <div class="ui inverted secondary menu">
+      <a href="index.html" class="item">
+      Home
+    </a>
+      <a class="active item">
+      Upload Image
+    </a>
+      <a class="item">
+      View Image
+    </a>
+    </div>
+  </div>
+  <div class="ui two column centered  grid">
+
+
+    <div class="column">
+      <div class="ui placeholder segment">
+
+        <h2 class="ui icon header">
+            <div class="content">
+              Upload Images
+              <div class="sub header">Upload Images to IPFS and store  the IPFS hashcode on the Ethereum Blockchain.</div>
+            </div>
+          </h2>
+
+
+
+        <form class="ui equal width form">
+          <h4 class="ui dividing header">Image Information</h4>
+          <div class="field">
+            <label>Title</label>
+            <input type="text" name="shipping[first-name]" placeholder="First Name">
+          </div>
+
+          <div class="field">
+            <label>Description</label>
+            <textarea rows="2"></textarea>
+          </div>
+
+          <div class="field">
+            <label>Image</label>
+            <input type="file" accept="image/*" name="shipping[address]">
+
+
+          </div>
+
+          <div class="ui segment">
+            <div class="field">
+              <div class="ui toggle checkbox">
+                <input type="checkbox" name="gift" tabindex="0" class="hidden">
+                <label>Do not include a receipt in the package</label>
+              </div>
+            </div>
+          </div>
+          <div class="ui button primary" tabindex="0">Upload</div>
+        </form>
+
+
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+</body>
+
+</html>
